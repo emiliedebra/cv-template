@@ -26,49 +26,14 @@
 
 <script>
 import SkillsText from '../components/text/SkillsText.vue';
+import { skillExplanations, skills } from '../data/skills.js';
 
 export default {
   name: 'skills',
   data() {
     return {
-      skillsInitial: [
-        {
-          title: 'Skill Title',
-          content: [
-            'Explanation One',
-            'Explanation Two',
-            'Explanation Three',
-            'Explanation Four',
-          ],
-          tags: [
-            'Tag One',
-            'Tag Two',
-          ],
-        },
-        {
-          title: 'Skill Two Title',
-          content: [
-            'Explanation One',
-          ],
-          tags: [
-            'Tag Three'
-          ],
-        },
-      ],
-      skills: [
-        {
-          title: 'Tag One',
-          pressed: false,
-        },
-        {
-          title: 'Tag Two',
-          pressed: false,
-        },
-        {
-          title: 'Tag Three',
-          pressed: false,
-        },
-      ],
+      skillsInitial: skillExplanations,
+      skills,
       skillsExplained: [],
       skillsSelected: [],
     };

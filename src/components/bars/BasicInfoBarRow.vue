@@ -27,35 +27,13 @@
 
 <script>
 import InfoText from '../text/InfoText.vue';
-
+import { profile } from '../../data/basic-info.js';
 export default {
   name: 'basic-info-bar-row',
   data() {
     return {
-      basic: [
-        {
-          title: 'Full Name',
-          content: '<Insert Full Name>',
-        },
-        {
-          title: 'Email',
-          content: '<Insert Email>',
-        },
-        {
-          title: 'Date of Birth',
-          content: '<Insert DoB>',
-        },
-        {
-          title: 'Citizenship',
-          content: '<Insert Citizenship>',
-        },
-      ],
-      additional: [
-        {
-          title: 'Availability',
-          content: '<Insert Availability>',
-        },
-      ],
+      basic: profile.basic,
+      additional: profile.additional,
     };
   },
   components: {

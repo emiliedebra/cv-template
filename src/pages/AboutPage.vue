@@ -35,6 +35,7 @@
 import InfoText from '../components/text/InfoText.vue';
 import BasicInfoBarCol from '../components/bars/BasicInfoBarCol.vue';
 import BasicInfoBarRow from '../components/bars/BasicInfoBarRow.vue';
+import { profile } from '../data/basic-info.js';
 
 export default {
   name: 'about',
@@ -42,24 +43,7 @@ export default {
     return {
       github: 'https://github.com/emiliedebra', // TODO: Insert github lunk
       linkedin: 'https://www.linkedin.com/in/emilie-wood/', // TODO: insert linkedin link
-      bio: {
-        title: 'Bio',
-        content: [
-          'Insert A Bio Here'
-          // 'UCT BSc Computer Science and Computer Engineering graduate.',
-
-          // `With a passion for problem-solving, I have a determined and positive attitude towards life's
-          // continuous complex problems. I have a strong work ethic which I have enjoyed applying to the challenges
-          // of the software development environment through several years of work experience, both backend and frontend.`,
-
-          // `Together with software, I am a music and dance enthusiast and am able to approach design problems
-          // from an artistic and creative perspective as well.`,
-
-          // `My problem-solving ability is applied throughout all aspects of my life, and I am continuously
-          // seeking to gain knowledge. When not gaining this knowledge in a software environment,
-          // I am an advocate for self-improvement and am always striving to better my physical and mental health.`,
-        ],
-      },
+      bio: profile.bio
     };
   },
   components: {

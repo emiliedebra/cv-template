@@ -14,28 +14,13 @@
 
 <script>
 import EducationText from '../components/text/EducationText.vue';
-
+import { tertiary, secondary } from '../data/education';
 export default {
   name: 'education',
   data() {
     return {
-      tertiary: [
-        {
-          institution: 'Institution Title',
-          year: 'Month Year - Month Year',
-          description: 'Insert a Description Here',
-          additional: 'Insert some additional text here',
-          logo: '<logo>',
-        },
-      ],
-      secondary: [
-        {
-          institution: 'Institution Title',
-          year: 'Year - Year',
-          description: 'Insert a Description Here',
-          additional: 'Insert additional text here',
-        },
-      ],
+      tertiary,
+      secondary,
     };
   },
   components: {

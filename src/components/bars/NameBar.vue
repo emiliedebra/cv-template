@@ -9,12 +9,14 @@
 </template>
 
 <script>
+import { profile } from '../../data/basic-info';
+
 export default {
   name: 'name-bar',
   data() {
     return {
-      name: '<Insert Name Here>',
-      initials: '<Insert Initials Here>',
+      name: profile.name,
+      initials: profile.initials,
     };
   },
 };

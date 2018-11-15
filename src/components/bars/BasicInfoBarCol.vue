@@ -34,30 +34,8 @@ export default {
   name: 'basic-info-bar-col',
   data() {
     return {
-      basic: [
-        {
-          title: 'Full Name',
-          content: '<Insert Full Name>',
-        },
-        {
-          title: 'Date of Birth',
-          content: '<Insert DoB>',
-        },
-        {
-          title: 'Email',
-          content: '<Insert Email>',
-        },
-      ],
-      additional: [
-        {
-          title: 'Citizenship',
-          content: '<Insert Citizenship>',
-        },
-        {
-          title: 'Availability',
-          content: '<Insert Availability>',
-        },
-      ],
+      basic: profile.basic,
+      additional: profile.additional,
     };
   },
   components: {

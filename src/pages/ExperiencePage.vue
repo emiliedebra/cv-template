@@ -15,39 +15,15 @@
 <script>
 import ExperienceText from '../components/text/ExperienceText.vue';
 import ProjectText from '../components/text/ProjectText.vue';
+import { projects } from '../data/projects';
+import { experiences } from '../data/experiences';
 
 export default {
   name: 'experience',
   data() {
     return {
-      projects: [
-        {
-          title: 'Project Title',
-          institution: 'Insitution where Project was Completed',
-          link: '<link to online resources>',
-          description: `Insert a description here`,
-          techUsed: [
-            {
-              title: 'Tech Title',
-              content: 'Tech explanation and details of what was implemented',
-              show: false,
-          }],
-        },
-      ],
-      experiences: [
-        {
-          title: 'Job Title',
-          company: 'Company Name',
-          date: 'Month Year - Month Year',
-          description: `What did you do?`,
-          techUsed: [
-            {
-              title: 'Tech Title',
-              content: 'Tech Explanation',
-            },
-          ],
-        },
-      ],
+      projects,
+      experiences
     };
   },
   components: {
